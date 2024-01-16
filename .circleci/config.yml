@@ -8,7 +8,7 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints:
-            - "6a:e8:ce:7b:8c:cf:d7:82:f2:52:f7:fe:3f:0e:39:60"
+            - "3c:44:76:53:db:39:2e:97:b5:6b:d1:6d:49:ad:f5:f3"
       - run:
           name: Run deploy script
           command: bash ~/project/scripts/deploy.sh

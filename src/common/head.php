@@ -16,7 +16,6 @@
         extend: {
           colors: {
             'accent': '#005175',
-            'accentDark': '#005175',
           }
         }
       }

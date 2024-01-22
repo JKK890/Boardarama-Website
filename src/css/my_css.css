@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @apply bg-gray-300 flex justify-center p-5 min-h-screen;
+}
+
+.content {
+  @apply max-w-5xl w-full flex flex-col justify-between;
+}
+
+.dropdown-container {
+  @apply relative;
+}
+
+.dropdown {
+  @apply hidden flex-col rounded p-2 sm:absolute sm:bg-slate-400 sm:text-slate-800 sm:shadow;
+}
+
+.dropdown-button {
+  @apply w-full text-left;
+}
+
+.dropdown-button:hover ~ .dropdown,
+.dropdown:hover {
+  @apply sm:flex;
+}
+
+.dropdown-button:focus ~ .dropdown {
+  @apply flex;
+}
+
+.dropdown > a {
+  @apply whitespace-nowrap rounded p-2;
+}
+
+.dropdown > a:hover {
+  @apply bg-slate-700 sm:bg-slate-200;
+}

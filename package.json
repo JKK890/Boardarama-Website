@@ -1,0 +1,9 @@
+{
+  "name": "adv-web-proj",
+  "version": "1.0.0",
+  "description": "Website for Advanced Internet Technologies and Web Programming",
+  "scripts": {
+    "css": "npx tailwindcss -i ./src/css/my_css.css -o ./src/css/output.css --watch",
+    "css-build": "npx tailwindcss -i ./src/css/my_css.css -o ./src/css/output.css"
+  }
+}

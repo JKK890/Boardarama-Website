@@ -21,11 +21,11 @@ body {
 }
 
 .dropdown {
-  @apply hidden flex-col rounded p-2 sm:absolute sm:bg-gray-400 sm:text-slate-800 sm:shadow -translate-x-1/4;
+  @apply hidden flex-col rounded p-2 sm:absolute sm:bg-gray-400 sm:text-slate-800 sm:shadow;
 }
 
 .dropdown-button {
-  @apply w-full text-center rounded px-2 hover:bg-gray-400;
+  @apply w-full text-center rounded px-2 hover:text-gray-400;
 }
 
 .dropdown-button:is(.dropdown-open) ~ .dropdown {

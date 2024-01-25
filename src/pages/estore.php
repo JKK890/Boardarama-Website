@@ -16,7 +16,7 @@
                     For your shopping and browsing convenience,
                     please choose one of the following links:
                 </p>
-                <div>
+                <div class="flex flex-col gap-4">
                     <div>
                         <i class="ph-bold ph-dice-one text-accent"></i>
                         To browse our sizeable product catalog <a href="pages/sorry.php">click here</a>.

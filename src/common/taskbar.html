@@ -1,5 +1,5 @@
 <div
-  class="mt-4 flex w-full flex-col justify-between gap-4 bg-accent px-8 py-2 text-white sm:flex-row"
+  class="mt-4 flex w-full flex-col justify-between gap-4 bg-accent px-8 py-4 sm:py-2 text-white sm:flex-row"
 >
   <a href="my_business.php">Home</a>
   <div class="dropdown-container">
@@ -37,3 +37,16 @@
   </div>
   <a href="pages/sitemap.php" class="link">Sitemap</a>
 </div>
+<script>
+  document.addEventListener("click", (event) => {
+    const dropdownButtons = document.querySelectorAll(".dropdown-button");
+
+    dropdownButtons.forEach((button) => {
+      if (event.target === button) {
+        button.classList.toggle("dropdown-open");
+      } else {
+        button.classList.remove("dropdown-open");
+      }
+    });
+  });
+</script>

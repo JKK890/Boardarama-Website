@@ -8,6 +8,7 @@
   $base = $protocol . $_SERVER['HTTP_HOST'] . strstr($path, $end, true) . $end . '/';
   ?>
   <base href="<?php echo $base ?>" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <link rel="stylesheet" href="css/output.css" />
   <script src="https://unpkg.com/@phosphor-icons/web"></script>

@@ -1296,10 +1296,6 @@ select {
   flex-direction: column;
 }
 
-.justify-center {
-  justify-content: center;
-}
-
 .justify-between {
   justify-content: space-between;
 }
@@ -1310,14 +1306,6 @@ select {
 
 .gap-5 {
   gap: 1.25rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
-}
-
-.gap-3 {
-  gap: 0.75rem;
 }
 
 .rounded {
@@ -1370,10 +1358,6 @@ select {
 
 .pb-2 {
   padding-bottom: 0.5rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
 }
 
 .text-center {
@@ -1476,12 +1460,21 @@ body {
 .dropdown > a {
   white-space: nowrap;
   border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
   padding: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .dropdown > a {
+    --tw-bg-opacity: 1;
+    background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+  }
 }
 
 .dropdown > a:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 640px) {
@@ -1513,16 +1506,8 @@ body {
 }
 
 @media (min-width: 768px) {
-  .md\:mt-0 {
-    margin-top: 0px;
-  }
-
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:pt-0 {
-    padding-top: 0px;
   }
 }
 

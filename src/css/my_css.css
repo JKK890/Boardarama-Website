@@ -33,9 +33,9 @@ body {
 }
 
 .dropdown > a {
-  @apply whitespace-nowrap rounded p-2;
+  @apply bg-slate-700 sm:bg-gray-400 whitespace-nowrap rounded p-2;
 }
 
 .dropdown > a:hover {
-  @apply bg-slate-700 sm:bg-slate-200;
+  @apply bg-slate-900 sm:bg-slate-200;
 }

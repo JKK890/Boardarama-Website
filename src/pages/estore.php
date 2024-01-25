@@ -18,24 +18,21 @@
                 </p>
                 <div>
                     <div>
-                        <i class="ph ph-dice-one"></i>
+                        <i class="ph-bold ph-dice-one text-accent"></i>
                         To browse our sizeable product catalog <a href="pages/sorry.php">click here</a>.
                     </div>
                     <div>
-                        <i class="ph ph-dice-two"></i>
+                        <i class="ph-bold ph-dice-two text-accent"></i>
                         Do you already have an account with us?
                         Log in to our e-store and begin browsing our vast array of games <a href="pages/sorry.php">click
                             here</a>.
                     </div>
                     <div>
-                        <i class=" ph ph-dice-three"></i>
+                        <i class="ph-bold ph-dice-three text-accent"></i>
                         <span>Don't already have an account with us? Then you can register (you only need to
                             do it once) <a href="pages/sorry.php">click here</a>.</span>
                     </div>
                 </div>
-
-
-
             </main>
         </div>
         <?php include '../common/footer.html'; ?>

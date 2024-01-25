@@ -8,7 +8,7 @@
             <?php include '../common/header.html'; ?>
             <?php include '../common/taskbar.html'; ?>
             <main class="prose max-w-none py-2">
-                <h1>Vision</h1>
+                <h1>Vision & Mission</h1>
             </main>
         </div>
         <?php include '../common/footer.html'; ?>

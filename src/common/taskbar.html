@@ -1,7 +1,9 @@
 <div
   class="mt-4 flex w-full flex-col justify-between gap-4 bg-accent px-8 py-4 sm:py-2 text-white sm:flex-row"
 >
-  <a href="my_business.php">Home</a>
+  <div class="text-center rounded px-2 hover:text-gray-400">
+    <a href="my_business.php">Home</a>
+  </div>
   <div class="dropdown-container">
     <button class="dropdown-button">
       Shop <i class="ph ph-caret-down"></i>
@@ -21,7 +23,7 @@
       Classes <i class="ph ph-caret-down"></i>
     </button>
     <div class="dropdown">
-      <a href="pages/sorry.php">D&D classes</a>
+      <a href="pages/sorry.php">D&D Classes</a>
       <a href="pages/sorry.php">Catan Classes (NEW!)</a>
     </div>
   </div>
@@ -30,23 +32,25 @@
       About Us <i class="ph ph-caret-down"></i>
     </button>
     <div class="dropdown">
-      <a href="pages/vision.php">Vision and Misison</a>
-      <a href="pages/locations.php">Our Locaiton</a>
-      <a href="pages/sorry.php">Feedback Form Classes</a>
+      <a href="pages/vision.php">Vision & Mission</a>
+      <a href="pages/locations.php">Our Locations</a>
+      <a href="pages/sorry.php">Feedback Form</a>
     </div>
   </div>
-  <a href="pages/sitemap.php" class="link">Sitemap</a>
+  <div class="text-center rounded px-2 hover:text-gray-400">
+    <a href="pages/sitemap.php">Site Map</a>
+  </div>
 </div>
 <script>
   document.addEventListener("click", (event) => {
-    const dropdownButtons = document.querySelectorAll(".dropdown-button");
-
-    dropdownButtons.forEach((button) => {
-      if (event.target === button) {
-        button.classList.toggle("dropdown-open");
-      } else {
+    const dropdownButton = event.target.closest(".dropdown-button");
+    if (dropdownButton) {
+      dropdownButton.classList.toggle("dropdown-open");
+      event.stopPropagation();
+    } else {
+      document.querySelectorAll(".dropdown-button").forEach((button) => {
         button.classList.remove("dropdown-open");
-      }
-    });
+      });
+    }
   });
 </script>

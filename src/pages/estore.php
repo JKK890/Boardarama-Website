@@ -24,7 +24,7 @@
                     <div>
                         <i class="ph-bold ph-dice-two text-accent"></i>
                         Do you already have an account with us?
-                        Log in to our e-store and begin browsing our vast array of games <a href="pages/sorry.php">click
+                        Login to our e-store and begin browsing our vast array of games <a href="pages/sorry.php">click
                             here</a>.
                     </div>
                     <div>

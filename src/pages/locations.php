@@ -11,10 +11,9 @@
                 <h1>Locations</h1>
                 <p>
                     As our company grows, we hope have many more locations all around the globe, eventually we will
-                    provide a list of all
-                    our store locations, currently there is only one location. Each location is be accompanied by
-                    contact information
-                    for that location and a link to a map showing showing you how to find us.
+                    provide a list of all our store locations, currently there is only one location. Each location is
+                    accompanied by contact information for that location and a link to a map showing showing you how to
+                    find us.
                 </p>
                 <p>
                     Here are a few details (the address and telephone number) for our current (and

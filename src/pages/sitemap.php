@@ -33,7 +33,7 @@
                         <a href="pages/locations.php">Our&nbsp;Locations</a>
                         <a title="Not yet active" href="pages/sorry.php">Feedback&nbsp;Form</a>
                     </div>
-                    <div class="bg-gray-400 rounded px-4 py-4 text-3xl w-min h-min"><a " href="
+                    <div class="bg-gray-400 rounded px-4 py-4 text-3xl w-min h-min"><a href="
                             pages/sitemap.php">Site&nbsp;Map</a></div>
                 </div>
             </main>

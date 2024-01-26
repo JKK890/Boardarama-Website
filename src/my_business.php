@@ -38,7 +38,6 @@
         </div>
         <?php include 'common/footer.html'; ?>
     </div>
-
 </body>
 
 </html>

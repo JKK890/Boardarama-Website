@@ -5,5 +5,9 @@
   "scripts": {
     "css": "npx tailwindcss -i ./src/css/my_css.css -o ./src/css/output.css --watch",
     "css-build": "npx tailwindcss -i ./src/css/my_css.css -o ./src/css/output.css"
+  },
+  "devDependencies": {
+    "@prettier/plugin-php": "0.14.3",
+    "prettier": "2.0.5"
   }
 }

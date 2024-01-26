@@ -36,5 +36,5 @@ body {
 }
 
 .dropdown > a:hover {
-  @apply bg-slate-700 sm:bg-slate-200;
+  @apply bg-slate-900 sm:bg-slate-200;
 }

@@ -1460,7 +1460,6 @@ body {
   white-space: nowrap;
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-
   padding: 0.5rem;
   text-align: center;
 }
@@ -1471,13 +1470,6 @@ body {
     --tw-bg-opacity: 1;
     background-color: rgb(156 163 175 / var(--tw-bg-opacity));
     text-align: left;
-  }
-}
-
-@media (min-width: 640px) {
-  .dropdown > a {
-    --tw-bg-opacity: 1;
-    background-color: rgb(156 163 175 / var(--tw-bg-opacity));
   }
 }
 

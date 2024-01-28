@@ -24,8 +24,9 @@
                     </div>
                     <div class="bg-gray-400 rounded px-4 py-4 text-2xl w-min h-min flex flex-col gap-4">
                         <div class="text-3xl">Classes</div>
-                        <a title="Not yet active" href="pages/sorry.php">D&D&nbsp;Classes</a>
-                        <a title="Not yet active" href="pages/sorry.php">Catan&nbsp;Classes&nbsp;(NEW!)</a>
+                        <a href="pages/dnd.php">D&D&nbsp;Classes</a>
+                        <a href="pages/ticket-to-ride.php">Ticket&nbsp;to&nbsp;Ride&nbsp;Classes</a>
+                        <a href="pages/catan.php">Catan&nbsp;Classes&nbsp;(NEW!)</a>
                     </div>
                     <div class="bg-gray-400 rounded px-4 py-4 text-2xl w-min h-min flex flex-col gap-4">
                         <div class="text-3xl">About&nbsp;Us</div>

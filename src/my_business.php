@@ -28,7 +28,7 @@
                         </p>
                     </article>
                     <div class="flex-1">
-                        <img class="w-full" id="placeholder" alt="Picture of Catan" src="images/catan.jpg">
+                        <img class="w-full" id="placeholder" alt="Picture of Catan" src="images/products/catan.jpg">
                         <footer>
                             <h5 class="bg-accent py-1 text-center text-white">Our Newest Board Game, Catan!</h5>
                         </footer>

@@ -19,7 +19,8 @@
                 <div class="flex flex-col gap-4">
                     <div>
                         <i class="ph-bold ph-dice-one text-accent"></i>
-                        To browse our sizeable product catalog <a href="pages/sorry.php">click here</a>.
+                        To browse our sizeable product catalog <a title="Not yet active" href="pages/sorry.php">click
+                            here</a>.
                     </div>
                     <div>
                         <i class="ph-bold ph-dice-two text-accent"></i>

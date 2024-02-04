@@ -5,7 +5,7 @@
 <body>
     <div class="content">
         <div>
-            <?php include 'common/header.html'; ?>
+            <?php include 'common/header.php'; ?>
             <?php include 'common/taskbar.html'; ?>
             <main>
                 <div class="flex flex-col md:flex-row my-5 gap-5">

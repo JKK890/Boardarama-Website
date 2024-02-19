@@ -47,3 +47,11 @@ body {
 .carouselLabel {
   @apply bg-accent py-1 text-center text-white;
 }
+
+.feedback-field {
+  @apply rounded bg-gray-200;
+}
+
+.submit-button {
+  @apply cursor-pointer px-2 py-2 mb-4 leading-none rounded text-white bg-accent hover:bg-gray-600 w-fit min-w-[100px];
+}

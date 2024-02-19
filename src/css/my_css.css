@@ -4,8 +4,9 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   @apply bg-gray-300 flex justify-center p-5 min-h-screen;
@@ -37,4 +38,12 @@ body {
 
 .dropdown > a:hover {
   @apply bg-slate-900 sm:bg-slate-200;
+}
+
+.carouselImage {
+  @apply object-fill w-full h-64 sm:h-96;
+}
+
+.carouselLabel {
+  @apply bg-accent py-1 text-center text-white;
 }

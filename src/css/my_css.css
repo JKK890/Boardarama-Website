@@ -48,10 +48,14 @@ body {
   @apply bg-accent py-1 text-center text-white;
 }
 
-.feedback-field {
-  @apply rounded bg-gray-200;
+.form-field {
+  @apply rounded w-full bg-gray-200;
+}
+
+.form-element {
+  @apply flex flex-col gap-1;
 }
 
 .submit-button {
-  @apply cursor-pointer px-2 py-2 mb-4 leading-none rounded text-white bg-accent hover:bg-gray-600 w-fit min-w-[100px];
+  @apply cursor-pointer px-2 py-2 leading-none rounded text-white bg-accent hover:bg-gray-600 w-fit min-w-[100px];
 }

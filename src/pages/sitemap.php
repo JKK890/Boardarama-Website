@@ -32,7 +32,7 @@
                         <div class="text-3xl">About&nbsp;Us</div>
                         <a href="pages/vision.php">Vision&nbsp;&&nbsp;Mission</a>
                         <a href="pages/locations.php">Our&nbsp;Locations</a>
-                        <a title="Not yet active" href="pages/sorry.php">Feedback&nbsp;Form</a>
+                        <a href="pages/feedback.php">Feedback&nbsp;Form</a>
                     </div>
                     <div class="bg-gray-400 rounded px-4 py-4 text-3xl w-min h-min"><a href="
                             pages/sitemap.php">Site&nbsp;Map</a></div>

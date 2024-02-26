@@ -44,7 +44,7 @@ Subject: $subject
 Message: $message
 ";
 
-$emailHeaderClient = "Message from u21@mail.cs.smu.ca  ";
+$emailHeaderClient = "Message from u50@mail.cs.smu.ca  ";
 $emailTemplateClient = 
 "
 Hello $prefix $lName  
@@ -61,7 +61,7 @@ if($reply !== ""){
     $emailTemplateClient .= "We will follow-up this email soon.";
 }
 
-mail("u21@mail.cs.smu.ca",$subject,$emailTemplateBusiness,$emailHeaderBusiness);
+mail("u50@mail.cs.smu.ca",$subject,$emailTemplateBusiness,$emailHeaderBusiness);
 mail($email,"RE:$subject",$emailTemplateClient,$emailHeaderClient);
 
 $html = str_replace("\r\n", "<br>", $emailTemplateClient);

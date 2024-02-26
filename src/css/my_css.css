@@ -41,7 +41,7 @@ body {
 }
 
 .carouselImage {
-  @apply object-fill w-full h-64 sm:h-96;
+  @apply object-cover w-full;
 }
 
 .carouselLabel {
@@ -58,4 +58,18 @@ body {
 
 .submit-button {
   @apply cursor-pointer px-2 py-2 leading-none rounded text-white bg-accent hover:bg-gray-600 w-fit min-w-[100px];
+}
+
+.form-control.form-validated :is(input, textarea, select):invalid {
+  @apply border border-red-500 ring-red-500;
+}
+
+.form-error {
+  @apply hidden text-red-500;
+}
+
+.form-control.form-validated
+  :is(input, textarea, select):invalid
+  + .form-error {
+  @apply block;
 }

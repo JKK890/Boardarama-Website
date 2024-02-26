@@ -1241,17 +1241,13 @@ select {
   margin-bottom: 0;
 }
 
-.float-right {
-  float: right;
-}
-
-.float-left {
-  float: left;
-}
-
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
 }
 
 .mt-1 {
@@ -1260,18 +1256,6 @@ select {
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.ml-1 {
-  margin-left: 0.25rem;
-}
-
-.ml-4 {
-  margin-left: 1rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
 }
 
 .flex {
@@ -1332,6 +1316,14 @@ select {
   flex-grow: 1;
 }
 
+.resize-none {
+  resize: none;
+}
+
+.resize {
+  resize: both;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1383,10 +1375,6 @@ select {
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
-.p-1 {
-  padding: 0.25rem;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1421,16 +1409,16 @@ select {
   padding-bottom: 0.5rem;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
 
 .text-right {
   text-align: right;
-}
-
-.align-middle {
-  vertical-align: middle;
 }
 
 .text-2xl {
@@ -1451,6 +1439,11 @@ select {
 .text-accent {
   --tw-text-opacity: 1;
   color: rgb(0 81 117 / var(--tw-text-opacity));
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -1552,16 +1545,9 @@ body {
 }
 
 .carouselImage {
-  height: 16rem;
   width: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-
-@media (min-width: 640px) {
-  .carouselImage {
-    height: 24rem;
-  }
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .carouselLabel {
@@ -1607,6 +1593,26 @@ body {
 .submit-button:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
+.form-control.form-validated :is(input, textarea, select):invalid {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(239 68 68 / var(--tw-ring-opacity));
+}
+
+.form-error {
+  display: none;
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.form-control.form-validated
+  :is(input, textarea, select):invalid
+  + .form-error {
+  display: block;
 }
 
 .hover\:bg-gray-600:hover {

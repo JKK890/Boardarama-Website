@@ -5,13 +5,13 @@
     </a>
   </div>
   <div class="w-full text-center">
-    <?php include(__DIR__ . "/../common/quote.php"); ?>
+    <?php include(__DIR__ . "/../scripts/getQuote.php"); ?>
   </div>
   <div class="text-right">
     <div id="time-container" class="text-sm sm:text-lg sm:whitespace-nowrap prose"></div>
     <div class="text-accent text-2xl pb-2">Welcome!</div>
     <a title="Not yet active" class="py-1 px-2 rounded text-white bg-accent hover:bg-gray-600" href="pages/sorry.php">
-      Log in
+      Log in <i class="ph ph-sign-in"></i>
     </a>
   </div>
 </header>

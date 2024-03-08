@@ -59,7 +59,6 @@
                                 <textarea required class="form-field resize-none" rows="7" name="message" id="message"
                                     placeholder="Tell us how we did!" resize: none></textarea>
                                 <span class="form-error">Please input a message</span>
-
                             </div>
                             <div class="form-element">
                                 <div class="flex justify-end items-center py-1">                                

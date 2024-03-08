@@ -16,8 +16,8 @@
                         <div class="text-3xl">Shop</div>
                         <a href="pages/estore.php">e-store&nbsp;Options</a>
                         <a title="Not yet active" href="pages/sorry.php">Product&nbsp;Catalog</a>
-                        <a title="Not yet active" href="pages/sorry.php">Register</a>
-                        <a title="Not yet active" href="pages/sorry.php">Login</a>
+                        <a href="pages/register.php">Register</a>
+                        <a href="pages/login.php">Login</a>
                         <a title="Not yet active" href="pages/sorry.php">Shopping&nbsp;Cart</a>
                         <a title="Not yet active" href="pages/sorry.php">Checkout</a>
                         <a title="Not yet active" href="pages/sorry.php">Logout</a>

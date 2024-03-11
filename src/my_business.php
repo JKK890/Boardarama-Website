@@ -36,7 +36,7 @@
         </div>
         <?php include 'common/footer.html'; ?>
     </div>
+    <script src="scripts/carousel.js"></script>
 </body>
-<script src="scripts/carousel.js"></script>
 
 </html>

@@ -29,7 +29,7 @@
                                     <label for="fName">First Name<span class="text-red-500">*</span></label>
                                     <input required pattern="^[A-Za-z]+$" class="form-field" type="text" name="fName"
                                         id="fName" placeholder="First Name">
-                                    <span class="form-error">Please input a first</span>
+                                    <span class="form-error">Please input a first name</span>
                                 </div>
                             </div>
                             <div class="form-element">

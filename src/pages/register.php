@@ -78,7 +78,7 @@
                                 <span class="form-error">Please input a valid password</span>
                             </div>
                             <div class="text-gray-500">Password must contain at least one letter, one number, one
-                                special character, and is at least 8 characters long</div>
+                                special character, and must be at least 8 characters long</div>
                             <div class="form-element flex-grow">
                                 <label for="confirm_password">Confirm Password<span
                                         class="text-red-500">*</span></label>

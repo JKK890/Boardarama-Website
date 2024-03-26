@@ -19,20 +19,19 @@
                 <div class="flex flex-col gap-4">
                     <div>
                         <i class="ph-bold ph-dice-one text-accent"></i>
-                        To browse our sizeable product catalog <a title="Not yet active" href="pages/sorry.php">click
+                        To browse our sizeable product catalog <a href="pages/products.php">click
                             here</a>.
                     </div>
                     <div>
                         <i class="ph-bold ph-dice-two text-accent"></i>
                         Do you already have an account with us?
-                        Login to our e-store and begin browsing our vast array of games <a title="Not yet active"
-                            href="pages/sorry.php">click
+                        Login to our e-store and begin browsing our vast array of games <a href="pages/login.php">click
                             here</a>.
                     </div>
                     <div>
                         <i class="ph-bold ph-dice-three text-accent"></i>
                         <span>Don't already have an account with us? Then you can register (you only need to
-                            do it once) <a title="Not yet active" href="pages/sorry.php">click here</a>.</span>
+                            do it once) <a href="pages/register.php">click here</a>.</span>
                     </div>
                 </div>
             </main>

@@ -14,7 +14,7 @@ var imageNames = [
     description: "The original trading card game, Pokemon!",
     alt: "Pokemon",
   },
-  { game: "Root", description: "Our staff pick, Root!", alt: "Root" },
+  { game: "root", description: "Our staff pick, Root!", alt: "Root" },
   {
     game: "ttr",
     description: "A great family-friendly game, Ticket to ride!",

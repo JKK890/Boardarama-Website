@@ -9,18 +9,16 @@
             <?php include '../common/taskbar.html'; ?>
             <main class="prose max-w-none py-2">
                 <h1>Site Map</h1>
-                <div class="flex gap-4 text-center lg:flex-row flex-col">
+                <div class="flex gap-4 text-center lg:flex-row flex-col items-center">
                     <div class="bg-gray-400 rounded px-4 py-4 text-3xl w-min h-min"><a href="my_business.php">Home</a>
                     </div>
                     <div class="bg-gray-400 rounded px-4 py-4 text-2xl w-min h-min flex flex-col gap-4">
                         <div class="text-3xl">Shop</div>
                         <a href="pages/estore.php">e-store&nbsp;Options</a>
-                        <a title="Not yet active" href="pages/sorry.php">Product&nbsp;Catalog</a>
+                        <a href="pages/products.php">Product&nbsp;Catalog</a>
                         <a href="pages/register.php">Register</a>
-                        <a href="pages/login.php">Login</a>
                         <a title="Not yet active" href="pages/sorry.php">Shopping&nbsp;Cart</a>
                         <a title="Not yet active" href="pages/sorry.php">Checkout</a>
-                        <a title="Not yet active" href="pages/sorry.php">Logout</a>
                     </div>
                     <div class="bg-gray-400 rounded px-4 py-4 text-2xl w-min h-min flex flex-col gap-4">
                         <div class="text-3xl">Classes</div>

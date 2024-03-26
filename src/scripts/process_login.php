@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include '../scripts/DB_Connect.php';
+require '../scripts/DB_Connect.php';
 
 function sanitize($param)
 {
@@ -30,19 +30,19 @@ $fields = array(
 $sanitized_values = array();
 
 foreach ($fields as $field => $pattern) {
-    if (isset($_POST[$field])) {
+    if (isset ($_POST[$field])) {
         $value = $_POST[$field];
         $sanitized_values[$field] = sanitize($value);
         if (!preg_match($pattern, sanitize($value))) {
-            die("Bad $field");
+            die ("Bad $field");
         }
     }
 }
 $username = $sanitized_values["username"];
-$sql = "SELECT * FROM my_Customers WHERE username = '$username'";
+$sql = "SELECT * FROM my_customers WHERE username = '$username'";
 if ($rows = mysqli_query($db, $sql)) {
     if (mysqli_num_rows($rows) == 0) {
-        header("Location: login.php?retry=true");
+        header("Location: ../pages/login.php?retry=true");
     }
     $row = mysqli_fetch_assoc($rows);
     if (password_verify($sanitized_values["password"], $row["password"])) {
@@ -50,8 +50,8 @@ if ($rows = mysqli_query($db, $sql)) {
         populate_session($values, $row);
         header("Location: ../my_business.php");
     } else {
-        header("Location: login.php?retry=true");
+        header("Location: ../pages/login.php?retry=true");
     }
 } else {
-    die("could not complete request. Please try again Later");
+    die ("could not complete request. Please try again Later");
 }

@@ -17,7 +17,7 @@ if ($is_logged_in) {
     <div id="time-container" class="text-sm sm:text-lg sm:whitespace-nowrap prose"></div>
     <?php if ($is_logged_in): ?>
       <div class="text-accent text-2xl pb-2">Welcome
-        <?php echo $name; ?>!
+        <?php echo $name; ?>
       </div>
       <a class="py-1 px-2 rounded text-white bg-accent hover:bg-gray-600" href="scripts/logout.php">
         Log out <i class="ph ph-sign-out"></i>

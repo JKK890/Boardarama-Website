@@ -5,13 +5,13 @@ if ($is_logged_in) {
 }
 ?>
 <header class="flex gap-5">
-  <div class="min-w-20 min-h-20 max-w-32 max-h-32">
+  <div class="min-w-32 min-h-32 max-w-32 max-h-32">
     <a href="my_business.php">
-      <img class="rounded-lg" src="images/logo.jpg" alt="Boardarama Logo" />
+      <img class="rounded-lg" src="images/logo.jpg" alt="Boardarama Logo">
     </a>
   </div>
   <div class="w-full text-center">
-    <?php include(__DIR__ . "/../scripts/getQuote.php"); ?>
+    <?php include (__DIR__ . "/../scripts/getQuote.php"); ?>
   </div>
   <div class="text-right">
     <div id="time-container" class="text-sm sm:text-lg sm:whitespace-nowrap prose"></div>

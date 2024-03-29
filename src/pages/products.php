@@ -10,12 +10,13 @@
             <main class="prose max-w-none py-2">
                 <h1>Product Catalog</h1>
                 <p>Browse our sizeable product catalog by clicking the following product types</p>
-                <div class="flex justify-between px-4 py-2 bg-gray-400 rounded mb-4">
-                    <a class="hover:bg-slate-200 px-2 py-1 rounded no-underline" href="pages/products.php">All</a>
+                <div class="flex justify-between items-center px-4 py-2 bg-gray-400 rounded mb-4 gap-2">
+                    <a class="hover:bg-slate-200 px-2 py-1 rounded no-underline text-xs sm:text-base"
+                        href="pages/products.php">All</a>
                     <?php include "../scripts/process_products.php" ?>
                     <?php foreach ($categories as $category): ?>
                         <a href="pages/products.php?category=<?= $category["code"] ?>"
-                            class="hover:bg-slate-200 px-2 py-1 rounded no-underline">
+                            class="hover:bg-slate-200 px-2 py-1 rounded no-underline text-xs sm:text-base">
                             <?= $category["name"] ?>
                         </a>
                     <?php endforeach ?>

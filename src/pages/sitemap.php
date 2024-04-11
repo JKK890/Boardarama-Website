@@ -18,8 +18,7 @@
                         <a href="pages/estore.php">e-store&nbsp;Options</a>
                         <a href="pages/products.php">Product&nbsp;Catalog</a>
                         <a href="pages/register.php">Register</a>
-                        <a title="Not yet active" href="pages/sorry.php">Shopping&nbsp;Cart</a>
-                        <a title="Not yet active" href="pages/sorry.php">Checkout</a>
+                        <a href="pages/cart.php">Shopping&nbsp;Cart</a>
                     </div>
                     <div class="bg-gray-400 rounded flex-grow p-4 text-2xl flex flex-col gap-4">
                         <div class="text-3xl">Classes</div>

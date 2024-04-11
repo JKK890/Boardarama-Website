@@ -1,14 +1,9 @@
 <?php
 
+require '../scripts/utils.php';
 require '../scripts/DB_Connect.php';
 
-function sanitize($param)
-{
-    $param = trim($param);
-    $param = stripslashes($param);
-    $param = htmlspecialchars($param);
-    return $param;
-}
+
 
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     header("Location: 500.php");
@@ -33,11 +28,11 @@ $fields = array(
 $sanitized_values = array();
 
 foreach ($fields as $field => $pattern) {
-    if (isset ($_POST[$field])) {
+    if (isset($_POST[$field])) {
         $value = $_POST[$field];
         $sanitized_values[$field] = sanitize($value);
         if (!preg_match($pattern, sanitize($value))) {
-            die ("Bad $field");
+            die("Bad $field");
         }
     }
 }
@@ -45,11 +40,11 @@ $sanitized_values["registration_datetime"] = date("c");
 
 
 if (fieldAlreadyExists($db, "my_customers", "email", $sanitized_values["email"])) {
-    die ("Email is already in use");
+    die("Email is already in use");
 }
 
 if ($sanitized_values["password"] !== sanitize($_POST["confirm_password"])) {
-    die ("Passwords don't match");
+    die("Passwords don't match");
 }
 
 $sanitized_values["password"] = password_hash($sanitized_values["password"], PASSWORD_DEFAULT);
@@ -58,7 +53,7 @@ $columns = implode(', ', array_keys($sanitized_values));
 $values = "'" . implode("', '", $sanitized_values) . "'";
 $query = "INSERT INTO my_customers ($columns) VALUES ($values)";
 if (!mysqli_query($db, $query)) {
-    die ("Unable to complete registration");
+    die("Unable to complete registration");
 }
 ?>
 

@@ -1,1 +1,1 @@
-Submission4 is ready!
+Removed checkout from navbar since you should get there through the cart in order to double check your order first

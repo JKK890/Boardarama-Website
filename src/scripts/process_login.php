@@ -2,14 +2,7 @@
 session_start();
 
 require '../scripts/DB_Connect.php';
-
-function sanitize($param)
-{
-    $param = trim($param);
-    $param = stripslashes($param);
-    $param = htmlspecialchars($param);
-    return $param;
-}
+require '../scripts/utils.php';
 
 function populate_session($fields, $row)
 {
@@ -30,11 +23,11 @@ $fields = array(
 $sanitized_values = array();
 
 foreach ($fields as $field => $pattern) {
-    if (isset ($_POST[$field])) {
+    if (isset($_POST[$field])) {
         $value = $_POST[$field];
         $sanitized_values[$field] = sanitize($value);
         if (!preg_match($pattern, sanitize($value))) {
-            die ("Bad $field");
+            die("Bad $field");
         }
     }
 }
@@ -53,5 +46,5 @@ if ($rows = mysqli_query($db, $sql)) {
         header("Location: ../pages/login.php?retry=true");
     }
 } else {
-    die ("could not complete request. Please try again Later");
+    die("could not complete request. Please try again Later");
 }

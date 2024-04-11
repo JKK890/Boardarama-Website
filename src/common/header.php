@@ -1,7 +1,7 @@
 <?php
 $is_logged_in = isset($_SESSION["customer_id"]);
 if ($is_logged_in) {
-  $name = $_SESSION["first_name"];
+  $name = $_SESSION["first_name"] . "!";
 }
 ?>
 <header class="flex gap-5">

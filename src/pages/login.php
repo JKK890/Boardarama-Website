@@ -24,7 +24,7 @@ $retry = isset($_GET["retry"]);
                             <div class="flex flex-col flex-wrap gap-4">
                                 <div class="form-element">
                                     <label for="username">Username</label>
-                                    <input required pattern="^.+$" class=" form-field" type="text" name="username"
+                                    <input required pattern="^.+$" class="form-field" type="text" name="username"
                                         id="username" placeholder="Enter your name here">
                                     <span class="form-error">Please input a valid username</span>
                                 </div>

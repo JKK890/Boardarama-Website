@@ -6,7 +6,6 @@
     <div class="content">
         <div>
             <?php include '../common/header.php'; ?>
-            <?php include '../common/taskbar.html'; ?>
             <main class="prose max-w-none py-2">
                 <h1>e-store Options</h1>
                 <p>Welcome to our e-store, and thank you for visiting!</p>

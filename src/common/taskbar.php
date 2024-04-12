@@ -1,6 +1,4 @@
-<div
-  class="mt-4 flex w-full flex-col justify-between gap-4 bg-accent px-8 py-4 sm:py-2 text-white sm:flex-row"
->
+<div class="mt-4 flex w-full flex-col justify-between gap-4 bg-accent px-8 py-4 sm:py-2 text-white sm:flex-row">
   <div class="text-center rounded px-2 hover:text-gray-400">
     <a href="my_business.php">Home</a>
   </div>
@@ -12,7 +10,13 @@
       <a href="pages/estore.php">e-store Options</a>
       <a href="pages/products.php">Product Catalog</a>
       <a href="pages/register.php">Register</a>
-      <a href="pages/cart.php">Shopping Cart</a>
+      <?php
+      if ($is_logged_in) {
+        echo "<a href=\"pages/cart.php\">Shopping Cart</a>";
+      } else {
+        echo "<a href=\"pages/login.php\">Shopping Cart</a>";
+      }
+      ?>
     </div>
   </div>
   <div class="dropdown-container">

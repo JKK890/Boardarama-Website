@@ -9,7 +9,6 @@ $retry = isset($_GET["retry"]);
     <div class="content">
         <div>
             <?php include '../common/header.php'; ?>
-            <?php include '../common/taskbar.html'; ?>
             <main class="prose max-w-none py-2">
                 <div class="flex flex-col md:flex-row gap-8">
                     <div class="flex-1">

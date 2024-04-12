@@ -6,7 +6,6 @@
     <div class="content">
         <div>
             <?php include '../common/header.php'; ?>
-            <?php include '../common/taskbar.html'; ?>
             <main class="prose max-w-none py-2 ">
                 <h1>Register</h1>
                 <form id="form" class="form-control" action="pages/process_register.php" method="post" novalidate>

@@ -65,7 +65,6 @@ if (!mysqli_query($db, $query)) {
     <div class="content">
         <div>
             <?php include '../common/header.php'; ?>
-            <?php include '../common/taskbar.html'; ?>
             <main class="prose max-w-none py-2">
                 <h1>Sign up Complete</h1>
                 <p>You have successfully registered!</p>

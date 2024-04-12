@@ -6,7 +6,6 @@
     <div class="content">
         <div>
             <?php include 'common/header.php'; ?>
-            <?php include 'common/taskbar.html'; ?>
             <main>
                 <div class="flex flex-col lg:flex-row my-5 gap-5">
                     <article class="flex-1 prose max-w-none">

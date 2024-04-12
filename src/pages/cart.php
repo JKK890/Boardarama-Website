@@ -10,7 +10,6 @@ $over = isset($_GET["over"]);
     <div class="content">
         <div>
             <?php include '../common/header.php'; ?>
-            <?php include '../common/taskbar.html'; ?>
             <?php include "../scripts/get_cart.php" ?>
             <main class="prose max-w-none py-2">
                 <h1>Shopping Cart</h1>

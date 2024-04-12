@@ -6,7 +6,6 @@
     <div class="content">
         <div>
             <?php include '../common/header.php'; ?>
-            <?php include '../common/taskbar.html'; ?>
             <main class="prose max-w-none py-2">
                 <h1>Feedback Form</h1>
                 <p><span class="text-red-500">*</span> indicates the field is required</p>

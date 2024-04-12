@@ -5,7 +5,11 @@
 <body>
     <div class="content">
         <div>
-            <?php include '../common/header.php'; ?>
+            <?php include '../common/header.php';
+            if (!$is_logged_in) {
+                header("Location:login.php");
+            }
+            ?>
             <main class="prose max-w-none py-2">
                 <h1>Checkout</h1>
                 <?php include "../scripts/get_cart.php" ?>

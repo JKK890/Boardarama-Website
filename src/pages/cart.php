@@ -2,15 +2,17 @@
 <html lang="en">
 <?php include '../common/head.php'; ?>
 
-<?php
-$over = isset($_GET["over"]);
-?>
-
 <body>
     <div class="content">
         <div>
-            <?php include '../common/header.php'; ?>
-            <?php include "../scripts/get_cart.php" ?>
+            <?php
+            include '../common/header.php';
+            $over = isset($_GET["over"]);
+            if (!$is_logged_in) {
+                header("Location:login.php");
+            }
+            include "../scripts/get_cart.php";
+            ?>
             <main class="prose max-w-none py-2">
                 <h1>Shopping Cart</h1>
                 <a class="no-underline" href="pages/products.php">

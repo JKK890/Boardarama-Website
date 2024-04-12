@@ -30,7 +30,7 @@ if ($is_logged_in) {
     <?php endif; ?>
   </div>
 </header>
-<?php include 'taskbar.php'; ?>
+<?php include 'taskbar.html'; ?>
 
 <script>
   (async function updateTime() {
